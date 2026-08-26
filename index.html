@@ -162,6 +162,60 @@
           width: 100%;
           border-collapse: collapse;
         }
+        @media (max-width: 640px) {
+        .tabela-presentes tbody,
+        .tabela-presentes tr,
+        .tabela-presentes td {
+          display: block;
+          width: 100%;
+        }
+
+        .tabela-presentes tr:first-child {
+          display: none;
+        }
+
+        .tabela-presentes tr {
+          background: #fff;
+          border: 1px solid var(--line);
+          border-radius: 16px;
+          padding: 12px;
+          margin-bottom: 12px;
+        }
+
+        .tabela-presentes td {
+          border: none;
+          padding: 0;
+        }
+
+        .tabela-presentes td:nth-child(1) {
+          display: inline-block;
+          width: auto;
+          font-weight: bold;
+          font-size: 1rem;
+          color: var(--text);
+        }
+
+        .tabela-presentes td:nth-child(2) {
+          display: inline-block;
+          width: auto;
+          float: right;
+          font-weight: bold;
+          color: var(--brand);
+        }
+
+        .tabela-presentes td:nth-child(3) {
+          clear: both;
+          margin-top: 12px;
+          text-align: center;
+        }
+
+        .tabela-presentes td:nth-child(3) img {
+          width: 160px;
+          max-width: 100%;
+          height: 160px;
+          object-fit: contain;
+          margin: 0 auto;
+        }
       }
     </style>
   </head>
